@@ -5,13 +5,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace SellMeApp.API.EntityConfigurations
+namespace SellMeApp.API.Data
 {
     public class DataContext : DbContext
     {
         public DataContext(DbContextOptions<DataContext> options) : base(options) { }
 
-        public DbSet<UserModel> UsersModel { get; set; }
+        public DbSet<User> Users { get; set; }
 
     }
 }
