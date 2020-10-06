@@ -5,13 +5,13 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using SellMeApp.API.EntityConfigurations;
+using SellMeApp.API.Data;
 
 namespace SellMeApp.API.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20201005220940_FirstChangeInUser")]
-    partial class FirstChangeInUser
+    [Migration("20201006125029_initial")]
+    partial class initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -21,7 +21,7 @@ namespace SellMeApp.API.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-            modelBuilder.Entity("SellMeApp.API.Model.UserModel", b =>
+            modelBuilder.Entity("SellMeApp.API.Model.User", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -60,7 +60,7 @@ namespace SellMeApp.API.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("UsersModel");
+                    b.ToTable("Users");
                 });
 #pragma warning restore 612, 618
         }
