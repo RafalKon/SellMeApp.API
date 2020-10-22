@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using PagedList;
-using SellMeApp.API.Model;
+using SellMeApp.API.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,6 +14,11 @@ namespace SellMeApp.API.Data
         public UserRepository(DataContext context) : base(context)
         {
             _context = context;
+        }
+
+        public Task<User> GetAllUsers()
+        {
+            throw new NotImplementedException();
         }
 
         public async Task<User> GetUser(int id)
