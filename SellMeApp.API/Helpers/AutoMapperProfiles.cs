@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
 using SellMeApp.API.Dtos;
-using SellMeApp.API.Model;
+using SellMeApp.API.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;

@@ -11,7 +11,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
 using SellMeApp.API.Data;
 using SellMeApp.API.Dtos;
-using SellMeApp.API.Model;
+using SellMeApp.API.Models;
 
 namespace SellMeApp.API.Controllers
 {
