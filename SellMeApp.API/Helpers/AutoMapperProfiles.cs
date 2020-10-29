@@ -15,7 +15,7 @@ namespace SellMeApp.API.Helpers
             CreateMap<User,UserForListDto>();
             CreateMap<User, UserForDetailsDto>();
             CreateMap<UserForRegisterDto, User>();
-
+            CreateMap<AuctionForCreateDto, Auction>();
 
         }
     }

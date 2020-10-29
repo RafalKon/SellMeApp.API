@@ -18,6 +18,7 @@ namespace SellMeApp.API.Models
         public DateTime LastActive { get; set; }
         public string City { get; set; }
         public bool IsActive { get; set; }
+        public ICollection<Auction> Auctions { get; set; }
 
     }
 }
